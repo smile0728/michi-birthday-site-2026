@@ -453,10 +453,10 @@ export default function App() {
             initial={{ opacity: 0, y: -50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.9 }}
-            className="fixed top-6 left-1/2 -translate-x-1/2 z-[1100] bg-[#2b3a33] border-2 border-[#6a8d7a] text-[#ece6d8] px-5 py-3 rounded-md shadow-2xl flex items-center gap-3 font-hand text-sm md:text-base max-w-[90%] w-max text-center"
+            className="fixed top-6 left-1/2 -translate-x-1/2 z-[1100] bg-[#2b3a33] border-2 border-[#6a8d7a] text-[#ece6d8] px-5 py-3 rounded-md shadow-2xl flex items-center gap-3 font-hand text-sm md:text-base max-w-[90%] w-fit text-center"
           >
             <div className="w-2 h-2 rounded-full bg-[#8f4a3a] animate-ping" />
-            <span className="chalk-text">{notificationMsg}</span>
+            <span className="chalk-text jp-balance">{notificationMsg}</span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -491,10 +491,10 @@ export default function App() {
 
                   {/* チョーク手書き風のタイトル */}
                   <div className="space-y-4 animate-pulse">
-                    <p className="text-sm tracking-widest text-[#a45a49] font-hand font-bold">
+                    <p className="text-sm tracking-wider md:tracking-widest text-[#a45a49] font-hand font-bold jp-balance">
                       ー 昭和レトロ誕生日記念放送 ー
                     </p>
-                    <h1 className="text-3xl md:text-4xl text-[#ece6d8] font-hand font-bold leading-relaxed tracking-wider">
+                    <h1 className="text-3xl md:text-4xl text-[#ece6d8] font-hand font-bold leading-relaxed tracking-normal md:tracking-wider jp-balance">
                       みちさんバースデー放送室
                     </h1>
                     <div className="w-24 h-0.5 bg-[#a45a49] mx-auto opacity-70 my-4" />
@@ -535,7 +535,7 @@ export default function App() {
                 onClick={turnOnTv}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full max-w-xs mx-auto bg-[#8f4a3a] hover:bg-[#a45a49] text-[#ece6d8] font-hand py-4 px-8 rounded-full border-2 border-[#ece6d8]/20 shadow-lg text-lg tracking-widest cursor-pointer transition-colors duration-200"
+                className="w-full max-w-xs mx-auto bg-[#8f4a3a] hover:bg-[#a45a49] text-[#ece6d8] font-hand py-4 px-8 rounded-full border-2 border-[#ece6d8]/20 shadow-lg text-lg tracking-wider cursor-pointer transition-colors duration-200 jp-keep"
               >
                 テレビの電源を入れる 📺
               </motion.button>
@@ -562,30 +562,30 @@ export default function App() {
                   <Tv size={12} className="animate-pulse" />
                   <span>Nostalgic Memorial TV System</span>
                 </div>
-                <h1 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-widest flex items-center justify-center md:justify-start gap-2">
-                  みちさんバースデー放送室 
-                  <span className="text-xs font-mono font-normal bg-[#33403a] text-[#ece6d8] px-2 py-0.5 rounded ml-2 border border-[#6a8d7a]/30">
+                <h1 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-normal md:tracking-wider flex flex-wrap items-center justify-center md:justify-start gap-2 jp-balance">
+                  <span>みちさんバースデー放送室</span>
+                  <span className="text-xs font-mono font-normal bg-[#33403a] text-[#ece6d8] px-2 py-0.5 rounded border border-[#6a8d7a]/30 ui-nowrap">
                     Ch.927 誕生日特別放送
                   </span>
                 </h1>
-                <p className="text-xs text-[#a39e93] font-klee">
+                <p className="text-xs text-[#a39e93] font-klee jp-balance">
                   1年間の『踊ってみた』作品の軌跡を振り返る、誕生日記念の特別授業です。
                 </p>
               </div>
 
               {/* 学校の黒板風 日直・出席板 */}
-              <div className="bg-[#2b3a33] border-4 border-[#5c4033] p-3 rounded-lg shadow-md max-w-sm w-full flex justify-between text-xs md:text-sm font-hand">
-                <div className="space-y-1 border-r border-[#6a8d7a]/30 pr-4">
-                  <div className="text-[#6a8d7a]">【本日の日直】</div>
-                  <div className="text-center font-bold text-[#ece6d8]">みちさん & 祝い隊</div>
+              <div className="bg-[#2b3a33] border-4 border-[#5c4033] p-3 rounded-lg shadow-md max-w-md w-full grid grid-cols-3 text-[11px] md:text-sm font-hand">
+                <div className="space-y-1 border-r border-[#6a8d7a]/30 px-2 first:pl-0">
+                  <div className="text-[#6a8d7a] text-center ui-nowrap">【本日の日直】</div>
+                  <div className="text-center font-bold text-[#ece6d8] jp-keep">みちさん & 祝い隊</div>
                 </div>
-                <div className="space-y-1 border-r border-[#6a8d7a]/30 px-4">
-                  <div className="text-[#6a8d7a]">【本日の目標】</div>
-                  <div className="text-center text-[#ece6d8] text-xs">全力でお祝いする！</div>
+                <div className="space-y-1 border-r border-[#6a8d7a]/30 px-2">
+                  <div className="text-[#6a8d7a] text-center ui-nowrap">【本日の目標】</div>
+                  <div className="text-center text-[#ece6d8] text-[11px] md:text-xs jp-keep">全力でお祝いする！</div>
                 </div>
-                <div className="space-y-1 pl-4 text-right">
-                  <div className="text-[#a45a49]">【出席状況】</div>
-                  <div className="text-center font-mono font-bold text-[#ece6d8]">365 / 365 日</div>
+                <div className="space-y-1 px-2 last:pr-0">
+                  <div className="text-[#a45a49] text-center ui-nowrap">【出席状況】</div>
+                  <div className="text-center font-mono font-bold text-[#ece6d8] ui-nowrap">365 / 365 日</div>
                 </div>
               </div>
             </div>
@@ -735,11 +735,11 @@ export default function App() {
 
                 {/* 補足操作案内 */}
                 <div className="bg-[#1f1a14] border border-[#332a21]/50 p-3.5 rounded-xl space-y-1.5 text-xs text-[#a39e93]">
-                  <div className="flex items-center justify-between">
-                    <p className="font-klee">📺 下の番組表から好きな授業（踊ってみた動画）を選択できます。</p>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+                    <p className="font-klee jp-keep">📺 下の番組表から好きな授業（踊ってみた動画）を選択できます。</p>
                     <p className="font-mono text-[10px] text-[#8f4a3a]">VHS RERUN SYSTEM</p>
                   </div>
-                  <p className="font-klee text-[11px] text-[#a45a49]/90 border-t border-[#332a21]/40 pt-1.5">
+                  <p className="font-klee text-[11px] text-[#a45a49]/90 border-t border-[#332a21]/40 pt-1.5 jp-keep">
                     📱 モバイル画面等でスクロールしづらい場合は、テレビの外郭（黒枠）や周りの余白、または下部の黒板グリーン部をスワイプするとスムーズにスクロールできます。
                   </p>
                 </div>
@@ -757,27 +757,27 @@ export default function App() {
                   <div className="p-6 md:p-8 space-y-6 pt-10">
                     
                     {/* ノートヘッダー */}
-                    <div className="flex justify-between items-start border-b border-[#a45a49]/30 pb-4">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 border-b border-[#a45a49]/30 pb-4">
                       <div>
-                        <div className="flex items-center gap-2 text-xs text-[#a45a49] font-hand font-semibold">
-                          <BookOpen size={14} />
+                        <div className="flex items-center gap-2 text-xs text-[#a45a49] font-hand font-semibold jp-keep">
+                          <BookOpen size={14} className="shrink-0" />
                           <span>学習ノート（授業の記録）</span>
                         </div>
-                        <h2 className="text-xl md:text-2xl font-hand font-bold text-[#110e0c] mt-1">
+                        <h2 className="text-xl md:text-2xl font-hand font-bold text-[#110e0c] mt-1 jp-keep">
                           第{activeLesson.period}時限の記録
                         </h2>
                       </div>
-                      <div className="text-right">
+                      <div className="text-left sm:text-right">
                         <div className="text-[10px] font-mono text-[#8a8174]">DATE:</div>
-                        <div className="text-xs font-mono font-bold text-[#a45a49]">{activeLesson.date}</div>
+                        <div className="text-xs font-mono font-bold text-[#a45a49] ui-nowrap">{activeLesson.date}</div>
                       </div>
                     </div>
 
                     {/* 授業タイトル */}
                     <div className="bg-[#a45a49]/5 border-l-4 border-[#a45a49] p-3 rounded-r-lg">
                       <div className="text-[10px] text-[#8a8174] uppercase tracking-wider font-mono">Subject (曲名)</div>
-                      <div className="text-base md:text-lg font-hand font-bold text-[#1a1511] flex items-center gap-1.5 mt-0.5">
-                        <Music size={16} className="text-[#a45a49]" />
+                      <div className="text-base md:text-lg font-hand font-bold text-[#1a1511] flex items-start gap-1.5 mt-0.5 jp-keep">
+                        <Music size={16} className="text-[#a45a49] shrink-0 mt-1" />
                         <span>{activeLesson.title}</span>
                       </div>
                     </div>
@@ -800,13 +800,13 @@ export default function App() {
                     </div>
 
                     {/* 教師からの評価スタンプ（レトロな赤インク風スタンプ） */}
-                    <div className="flex justify-between items-center pt-2">
-                      <div className="text-[11px] font-klee text-[#8a8174]">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 pt-2">
+                      <div className="text-[11px] font-klee text-[#8a8174] jp-keep">
                         ※この授業は記念再放送として全員が出席しました。
                       </div>
                       
                       {/* 赤インクスタンプ */}
-                      <div className="relative w-20 h-20 flex items-center justify-center transform rotate-6 border-4 border-dashed border-[#a45a49] rounded-full p-1 shadow-sm select-none">
+                      <div className="relative w-20 h-20 flex items-center justify-center transform rotate-6 border-4 border-dashed border-[#a45a49] rounded-full p-1 shadow-sm select-none shrink-0 self-end sm:self-auto">
                         <div className="border-2 border-double border-[#a45a49] rounded-full w-full h-full flex flex-col items-center justify-center bg-white/40">
                           <span className="text-[10px] font-bold text-[#a45a49] font-hand leading-none">みちさん</span>
                           <span className="text-xs font-bold text-[#a45a49] font-hand leading-normal uppercase my-0.5">
@@ -835,13 +835,13 @@ export default function App() {
             <section className="space-y-6">
               
               <div className="text-center space-y-2">
-                <div className="inline-block bg-[#2b3a33] text-[#ece6d8] px-4 py-1.5 rounded-full border border-[#6a8d7a]/40 text-xs font-hand">
+                <div className="inline-block bg-[#2b3a33] text-[#ece6d8] px-4 py-1.5 rounded-full border border-[#6a8d7a]/40 text-xs font-hand jp-keep">
                   ー 年間時間割表（1年間で20本） ー
                 </div>
-                <h2 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-widest chalk-text">
+                <h2 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-normal md:tracking-wider chalk-text jp-balance">
                   授業カリキュラム一覧
                 </h2>
-                <p className="text-xs text-[#a39e93] font-klee">
+                <p className="text-xs text-[#a39e93] font-klee jp-balance max-w-2xl mx-auto">
                   タップすると、上のブラウン管テレビのチャンネルが切り替わり、動画と感想文がロードされます。
                 </p>
               </div>
@@ -869,8 +869,8 @@ export default function App() {
                       
                       <div className="space-y-2 relative z-10">
                         {/* 時限バッジ */}
-                        <div className="flex justify-between items-center">
-                          <span className="font-mono text-[10px] tracking-widest uppercase text-[#a45a49]">
+                        <div className="flex justify-between items-center gap-2">
+                          <span className="font-mono text-[10px] tracking-normal sm:tracking-wider uppercase text-[#a45a49] ui-nowrap">
                             PERIOD {lesson.period < 10 ? `0${lesson.period}` : lesson.period}
                           </span>
                           {isActive && (
@@ -929,42 +929,42 @@ export default function App() {
                   <div className="space-y-4 relative z-10">
                     <div className="border-b-2 border-[#6a8d7a]/40 pb-2 text-center">
                       <h3 className="font-hand text-xl text-[#ece6d8] chalk-text">みちさん通知表</h3>
-                      <p className="text-[10px] font-mono text-[#6a8d7a] uppercase tracking-widest mt-0.5">Dance Performance Appraisal</p>
+                      <p className="text-[10px] font-mono text-[#6a8d7a] uppercase tracking-wider mt-0.5 jp-balance">Dance Performance Appraisal</p>
                     </div>
 
-                    <table className="w-full text-sm font-hand">
+                    <table className="w-full text-[12px] sm:text-sm font-hand [word-break:keep-all]">
                       <thead>
                         <tr className="border-b border-[#6a8d7a]/30 text-[#6a8d7a]">
-                          <th className="py-2 text-left">教科（項目）</th>
-                          <th className="py-2 text-center">評価</th>
+                          <th className="py-2 pr-2 text-left ui-nowrap">教科（項目）</th>
+                          <th className="py-2 px-2 text-center ui-nowrap">評価</th>
                           <th className="py-2 text-right">所見</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[#6a8d7a]/20">
                         <tr>
-                          <td className="py-3 text-[#ece6d8] flex items-center gap-1.5"><Heart size={14} className="text-[#a45a49]" /> 笑顔のまぶしさ</td>
-                          <td className="py-3 text-center text-[#a45a49] font-bold text-base">💮 特丸</td>
-                          <td className="py-3 text-right text-xs text-[#a39e93]">銀河系で一番きらきら</td>
+                          <td className="py-3 pr-2 text-[#ece6d8]"><span className="inline-flex items-center gap-1.5 ui-nowrap"><Heart size={14} className="text-[#a45a49] shrink-0" /> 笑顔のまぶしさ</span></td>
+                          <td className="py-3 px-2 text-center text-[#a45a49] font-bold text-sm sm:text-base ui-nowrap">💮 特丸</td>
+                          <td className="py-3 text-right text-xs text-[#a39e93] jp-keep">銀河系で一番きらきら</td>
                         </tr>
                         <tr>
-                          <td className="py-3 text-[#ece6d8] flex items-center gap-1.5"><Sparkles size={14} className="text-[#a45a49]" /> ダンスのキレ</td>
-                          <td className="py-3 text-center text-[#a45a49] font-bold text-base">💮 特丸</td>
-                          <td className="py-3 text-right text-xs text-[#a39e93]">しなやかで抜群の安定感</td>
+                          <td className="py-3 pr-2 text-[#ece6d8]"><span className="inline-flex items-center gap-1.5 ui-nowrap"><Sparkles size={14} className="text-[#a45a49] shrink-0" /> ダンスのキレ</span></td>
+                          <td className="py-3 px-2 text-center text-[#a45a49] font-bold text-sm sm:text-base ui-nowrap">💮 特丸</td>
+                          <td className="py-3 text-right text-xs text-[#a39e93] jp-keep">しなやかで抜群の安定感</td>
                         </tr>
                         <tr>
-                          <td className="py-3 text-[#ece6d8] flex items-center gap-1.5"><Music size={14} className="text-[#a45a49]" /> リズム感</td>
-                          <td className="py-3 text-center text-[#a45a49] font-bold text-base">💮 特丸</td>
-                          <td className="py-3 text-right text-xs text-[#a39e93]">曲の主人公になりきる天才</td>
+                          <td className="py-3 pr-2 text-[#ece6d8]"><span className="inline-flex items-center gap-1.5 ui-nowrap"><Music size={14} className="text-[#a45a49] shrink-0" /> リズム感</span></td>
+                          <td className="py-3 px-2 text-center text-[#a45a49] font-bold text-sm sm:text-base ui-nowrap">💮 特丸</td>
+                          <td className="py-3 text-right text-xs text-[#a39e93] jp-keep">曲の主人公になりきる天才</td>
                         </tr>
                         <tr>
-                          <td className="py-3 text-[#ece6d8] flex items-center gap-1.5"><Calendar size={14} className="text-[#a45a49]" /> 努力・継続性</td>
-                          <td className="py-3 text-center text-[#a45a49] font-bold text-base">💮 特丸</td>
-                          <td className="py-3 text-right text-xs text-[#a39e93]">約20本！完璧な出席記録</td>
+                          <td className="py-3 pr-2 text-[#ece6d8]"><span className="inline-flex items-center gap-1.5 ui-nowrap"><Calendar size={14} className="text-[#a45a49] shrink-0" /> 努力・継続性</span></td>
+                          <td className="py-3 px-2 text-center text-[#a45a49] font-bold text-sm sm:text-base ui-nowrap">💮 特丸</td>
+                          <td className="py-3 text-right text-xs text-[#a39e93] jp-keep">約20本！完璧な出席記録</td>
                         </tr>
                         <tr>
-                          <td className="py-3 text-[#ece6d8] flex items-center gap-1.5"><Award size={14} className="text-[#a45a49]" /> ファンへの愛</td>
-                          <td className="py-3 text-center text-[#a45a49] font-bold text-base">💮 特丸</td>
-                          <td className="py-3 text-right text-xs text-[#a39e93]">いつも特大の元気を届ける</td>
+                          <td className="py-3 pr-2 text-[#ece6d8]"><span className="inline-flex items-center gap-1.5 ui-nowrap"><Award size={14} className="text-[#a45a49] shrink-0" /> ファンへの愛</span></td>
+                          <td className="py-3 px-2 text-center text-[#a45a49] font-bold text-sm sm:text-base ui-nowrap">💮 特丸</td>
+                          <td className="py-3 text-right text-xs text-[#a39e93] jp-keep">いつも特大の元気を届ける</td>
                         </tr>
                       </tbody>
                     </table>
@@ -980,13 +980,13 @@ export default function App() {
                 <div className="lg:col-span-7 flex flex-col justify-between space-y-6">
                   
                   <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-xs text-[#a45a49] font-mono tracking-wider">
+                    <div className="flex flex-wrap items-center gap-2 text-xs text-[#a45a49] font-mono tracking-wider">
                       <span>REPORT CARD</span>
                       <span className="w-1.5 h-1.5 rounded-full bg-[#a45a49]" />
                       <span>総合所見欄</span>
                     </div>
                     
-                    <h3 className="text-xl md:text-2xl font-hand text-[#ece6d8] tracking-wider flex items-center gap-2">
+                    <h3 className="text-xl md:text-2xl font-hand text-[#ece6d8] tracking-normal md:tracking-wider flex items-center gap-2 jp-balance">
                       総合所見（みちさんへの手紙）
                     </h3>
 
@@ -1000,7 +1000,7 @@ export default function App() {
                            }} 
                       />
 
-                      <p className="text-[#a45a49] font-bold">みちさんへ、お誕生日おめでとうございます！</p>
+                      <p className="text-[#a45a49] font-bold jp-keep">みちさんへ、お誕生日おめでとうございます！</p>
                       
                       <p className="indent-4 text-justify">
                         この1年間、みちさんが投稿してくれた約20本の踊ってみた作品は、どれも個性的で、熱い想いがぎゅっと詰まった素晴らしい「授業」ばかりでした。
@@ -1028,7 +1028,7 @@ export default function App() {
                     <button
                       onClick={unlockSpecial}
                       disabled={isSpecialUnlocked}
-                      className={`font-hand px-6 py-3 rounded-full border-2 text-sm tracking-widest transition-all duration-300 flex items-center gap-2 cursor-pointer ${
+                      className={`font-hand px-6 py-3 rounded-full border-2 text-sm tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer jp-keep ${
                         isSpecialUnlocked 
                           ? 'bg-[#2b3a33] border-[#6a8d7a] text-[#6a8d7a] cursor-default' 
                           : 'bg-[#8f4a3a] border-[#ece6d8]/20 hover:bg-[#a45a49] hover:scale-105 active:scale-95 text-[#ece6d8] shadow-lg'
@@ -1077,10 +1077,10 @@ export default function App() {
                       </div>
                       
                       <div className="space-y-2">
-                        <h3 className="font-hand text-xl md:text-2xl text-[#ece6d8] tracking-widest">
+                        <h3 className="font-hand text-xl md:text-2xl text-[#ece6d8] tracking-normal md:tracking-wider jp-balance">
                           本日の予定：特別授業（秘密の放課後）
                         </h3>
-                        <p className="text-xs text-[#a39e93] font-klee">
+                        <p className="text-xs text-[#a39e93] font-klee jp-balance">
                           上の「特別授業を開放する」ボタンを押すか、ここをタップすると
                           ロックが解除され、秘密の誕生日動画枠が現れます。
                         </p>
@@ -1088,7 +1088,7 @@ export default function App() {
 
                       <div className="w-16 h-0.5 bg-[#8f4a3a] opacity-50" />
                       
-                      <p className="text-xs text-[#8f4a3a] font-hand tracking-widest animate-pulse">
+                      <p className="text-xs text-[#8f4a3a] font-hand tracking-wider animate-pulse jp-keep">
                         【タップして出席登録＆ロック解除】
                       </p>
                     </div>
@@ -1108,16 +1108,16 @@ export default function App() {
                       
                       {/* 黒板の文字・ヘッダー */}
                       <div className="border-b-2 border-dashed border-[#6a8d7a]/50 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                        <div>
-                          <div className="inline-flex items-center gap-1 text-[#a45a49] font-hand text-xs font-bold bg-[#a45a49]/10 px-2 py-0.5 rounded border border-[#a45a49]/20">
-                            <Sparkles size={12} className="animate-spin" />
+                        <div className="min-w-0">
+                          <div className="inline-flex items-center gap-1 text-[#a45a49] font-hand text-xs font-bold bg-[#a45a49]/10 px-2 py-0.5 rounded border border-[#a45a49]/20 jp-keep">
+                            <Sparkles size={12} className="animate-spin shrink-0" />
                             <span>本日限りの特別授業</span>
                           </div>
-                          <h3 className="text-2xl md:text-3xl font-hand font-bold text-[#ece6d8] chalk-text mt-1.5">
+                          <h3 className="text-2xl md:text-3xl font-hand font-bold text-[#ece6d8] chalk-text mt-1.5 jp-balance">
                             特別授業：『ハッピーバースデーみちさん！』
                           </h3>
                         </div>
-                        <div className="text-left md:text-right font-hand text-xs text-[#6a8d7a]">
+                        <div className="text-left md:text-right font-hand text-xs text-[#6a8d7a] shrink-0">
                           <span>日付: {SPECIAL_LESSON.date}</span>
                         </div>
                       </div>
@@ -1148,25 +1148,25 @@ export default function App() {
                           
                           {/* チョーク赤枠の手書き看板 */}
                           <div className="border-2 border-dashed border-[#a45a49] bg-[#1a1712]/45 p-5 rounded-2xl text-[#ece6d8] space-y-4 font-hand shadow-inner">
-                            <h4 className="text-lg text-[#a45a49] chalk-text-red font-bold flex items-center gap-1">
-                              <Heart size={16} className="fill-[#a45a49] animate-pulse" />
+                            <h4 className="text-lg text-[#a45a49] chalk-text-red font-bold flex items-center gap-1 jp-keep">
+                              <Heart size={16} className="fill-[#a45a49] animate-pulse shrink-0" />
                               <span>お祝いメッセージ 💮</span>
                             </h4>
                             
-                            <p className="text-sm md:text-base leading-relaxed text-[#ece6d8]/90 pl-1">
+                            <p className="text-sm md:text-base leading-relaxed text-[#ece6d8]/90 pl-1 jp-keep">
                               {SPECIAL_LESSON.comment}
                             </p>
 
-                            <div className="border-t border-[#6a8d7a]/30 pt-3 mt-3 flex items-center justify-between text-xs text-[#6a8d7a]">
-                              <span>企画・制作: みちさんバースデー放送室お祝い隊</span>
+                            <div className="border-t border-[#6a8d7a]/30 pt-3 mt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs text-[#6a8d7a]">
+                              <span className="jp-keep">企画・制作: みちさんバースデー放送室お祝い隊</span>
                               <span className="font-mono text-[10px] text-[#a45a49]">SPECIAL PRESENT</span>
                             </div>
                           </div>
 
                           {/* リピートを促す可愛いチョーク風手書きメモ */}
                           <div className="border border-dashed border-[#6a8d7a] p-4 rounded-xl text-center font-hand text-xs text-[#6a8d7a] space-y-1">
-                            <p className="chalk-text-green">💡 「みちさん、生まれてきてくれてありがとう！」</p>
-                            <p>この動画の感想は、ぜひコメント欄でたくさん届けてくださいね！</p>
+                            <p className="chalk-text-green jp-balance">💡 「みちさん、生まれてきてくれてありがとう！」</p>
+                            <p className="jp-balance">この動画の感想は、ぜひコメント欄でたくさん届けてくださいね！</p>
                           </div>
 
                         </div>
@@ -1184,8 +1184,8 @@ export default function App() {
 
           {/* フッター */}
           <footer className="mt-20 border-t border-[#2d2621] pt-8 text-center text-xs text-[#8e897e] font-klee space-y-3 px-4 relative z-10">
-            <p>📺 本サイトはみちさんのお誕生日を記念して作られたファンメイドサプライズサイトです。</p>
-            <p className="font-mono text-[10px] tracking-widest text-[#8f4a3a]/60">
+            <p className="jp-balance">📺 本サイトはみちさんのお誕生日を記念して作られたファンメイドサプライズサイトです。</p>
+            <p className="font-mono text-[10px] tracking-wider text-[#8f4a3a]/60 break-words">
               © 2026 みちさんお祝い委員会 / MICHI-SAN BIRTHDAY BROADCAST PROJECT. ALL RIGHTS RESERVED.
             </p>
           </footer>

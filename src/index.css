@@ -79,6 +79,24 @@ body {
   letter-spacing: 0.05em;
 }
 
+.jp-keep {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+
+.jp-balance {
+  text-wrap: balance;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+
+.ui-nowrap {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
 /* Custom scrollbar for retro feel */
 ::-webkit-scrollbar {
   width: 8px;
@@ -145,4 +163,3 @@ body {
 .crt-flickering {
   animation: crt-flicker 0.25s infinite;
 }
-
