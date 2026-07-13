@@ -361,6 +361,7 @@ export default function App() {
   // 状態管理
   const [isTvOn, setIsTvOn] = useState<boolean>(false);
   const [hasStarted, setHasStarted] = useState<boolean>(false);
+  const [isPoweringOn, setIsPoweringOn] = useState<boolean>(false);
   const [activePeriod, setActivePeriod] = useState<number>(1);
   const [isTvGlitching, setIsTvGlitching] = useState<boolean>(false);
   const [isSpecialUnlocked, setIsSpecialUnlocked] = useState<boolean>(false);
@@ -403,17 +404,24 @@ export default function App() {
 
   // テレビをONにする
   const turnOnTv = () => {
+    if (isPoweringOn) return;
     sfx.playTvOn();
     setIsTvOn(true);
-    setHasStarted(true);
+    setIsPoweringOn(true);
     
+    // ブラウン管が点いていく演出を見せてから本編へ移行する
+    setTimeout(() => {
+      setHasStarted(true);
+      setIsTvGlitching(true);
+    }, 1500);
+
     // 最初は砂嵐から徐々に映像が出る演出
-    setIsTvGlitching(true);
     setTimeout(() => {
       setIsTvGlitching(false);
+      setIsPoweringOn(false);
       sfx.playSchoolChime(); // 起動時に優しくチャイムを鳴らす
       triggerNotification("チャイムが鳴りました！みちさんバースデー放送室の開始です");
-    }, 1200);
+    }, 2600);
   };
 
   // 特別授業のロックを解除
@@ -476,10 +484,11 @@ export default function App() {
           >
             {/* 砂嵐風のバックグラウンド */}
             <div className="absolute inset-0 bg-[radial-gradient(#1f1c18_1px,transparent_1px)] [background-size:16px_16px] opacity-35" />
+            <div className="old-tv-room-noise" />
             
             <div className="relative max-w-xl w-full text-center z-10 space-y-12 px-4">
               {/* テレビ本体のレトロなアウトライン */}
-              <div className="border-4 border-[#332b24] bg-[#1a1712] rounded-3xl p-8 shadow-2xl relative overflow-hidden ring-8 ring-[#161411] outline-none">
+              <div className={`border-4 border-[#332b24] bg-[#1a1712] rounded-3xl p-8 shadow-2xl relative overflow-hidden ring-8 ring-[#161411] outline-none ${isPoweringOn ? 'tv-cabinet-powering' : ''}`}>
                 
                 {/* 画面の内側 */}
                 <div className="bg-[#0f0e0d] border-2 border-[#2b2520] rounded-2xl py-12 px-6 relative overflow-hidden flex flex-col items-center justify-center min-h-[300px] shadow-inner">
@@ -488,9 +497,17 @@ export default function App() {
                   
                   {/* アナログ砂嵐のうっすらした表示 */}
                   <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15)_2px,rgba(255,255,255,0.05)_2px,rgba(255,255,255,0.05)_4px)] pointer-events-none" />
+                  <div className="intro-tv-noise" />
+                  {isPoweringOn && (
+                    <div className="crt-power-on" aria-hidden="true">
+                      <div className="crt-power-flash" />
+                      <div className="crt-power-line" />
+                      <div className="crt-power-static" />
+                    </div>
+                  )}
 
                   {/* チョーク手書き風のタイトル */}
-                  <div className="space-y-4 animate-pulse">
+                  <div className={`space-y-4 animate-pulse transition-opacity duration-300 ${isPoweringOn ? 'opacity-20 blur-[1px]' : 'opacity-100'}`}>
                     <p className="text-sm tracking-wider md:tracking-widest text-[#a45a49] font-hand font-bold jp-balance">
                       ー 昭和レトロ誕生日記念放送 ー
                     </p>
@@ -535,11 +552,12 @@ export default function App() {
               {/* 起動ボタン */}
               <motion.button
                 onClick={turnOnTv}
+                disabled={isPoweringOn}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full max-w-xs mx-auto bg-[#8f4a3a] hover:bg-[#a45a49] text-[#ece6d8] font-hand py-4 px-8 rounded-full border-2 border-[#ece6d8]/20 shadow-lg text-lg tracking-wider cursor-pointer transition-colors duration-200 jp-keep"
+                className="w-full max-w-xs mx-auto bg-[#8f4a3a] hover:bg-[#a45a49] disabled:bg-[#4a3f33] disabled:text-[#a39e93] text-[#ece6d8] font-hand py-4 px-8 rounded-full border-2 border-[#ece6d8]/20 shadow-lg text-lg tracking-wider cursor-pointer disabled:cursor-wait transition-colors duration-200 jp-keep"
               >
-                テレビの電源を入れる 📺
+                {isPoweringOn ? 'ブラウン管 起動中...' : 'テレビの電源を入れる 📺'}
               </motion.button>
             </div>
           </motion.div>
