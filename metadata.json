@@ -1,0 +1,6 @@
+{
+  "name": "みちちゃん誕生日サイト",
+  "description": "みちちゃん教育番組をコンセプトにした、レトロでノスタルジックな誕生日サプライズサイト。懐かしいブラウン管、黒板、砂嵐をモチーフに、踊ってみた作品を授業形式で振り返ります。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
