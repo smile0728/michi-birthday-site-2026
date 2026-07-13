@@ -169,7 +169,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ハッピーシンセサイザ 踊ってみた",
     nicovideoId: "sm38500001", // <!-- ここに1本目の動画IDを入れる -->
     date: "2025年08月01日",
-    comment: "記念すべき教育番組の第1時限目！ドキドキの初投稿です。みちちゃんの緊張が指先から伝わってくるけれど、弾ける笑顔は最初から満点！何回も見返したくなる、ここから全てが始まった奇跡の原点です。",
+    comment: "記念すべきバースデー放送室の第1時限目！ドキドキの初投稿です。みちちゃんの緊張が指先から伝わってくるけれど、弾ける笑顔は最初から満点！何回も見返したくなる、ここから全てが始まった奇跡の原点です。",
     stamp: "excellent",
     chalkColor: "white"
   },
@@ -353,7 +353,7 @@ const LESSON_DATA: Lesson[] = [
 const SPECIAL_LESSON = {
   title: "ハッピーバースデーみちちゃん！本日投稿の踊ってみた最新作",
   nicovideoId: "sm41000000", // <!-- ここに特別なサプライズ動画IDを入れる -->
-  date: "2026年07月13日 (本日！)",
+  date: "2026年09月27日 (誕生日当日！)",
   comment: "みちちゃん、お誕生日本当におめでとう！この1年間、みちちゃんが届けてくれたたくさんの『踊ってみた』と最高の笑顔は、私たちの毎日をどれだけ明るく彩ってくれたか計り知れません。不器用だけど、心からの感謝を込めて作った特設サイトです。これからも、自分らしくきらきら踊り続けるみちちゃんを、私たちはいつまでも一番に応援しています！特別な今日を、特別なお祝いとともに。"
 };
 
@@ -412,7 +412,7 @@ export default function App() {
     setTimeout(() => {
       setIsTvGlitching(false);
       sfx.playSchoolChime(); // 起動時に優しくチャイムを鳴らす
-      triggerNotification("チャイムが鳴りました！みちちゃん教育番組の開始です");
+      triggerNotification("チャイムが鳴りました！みちちゃんバースデー放送室の開始です");
     }, 1200);
   };
 
@@ -492,14 +492,14 @@ export default function App() {
                   {/* チョーク手書き風のタイトル */}
                   <div className="space-y-4 animate-pulse">
                     <p className="text-sm tracking-widest text-[#a45a49] font-hand font-bold">
-                      ー 昭和レトロ教育番組再放送 ー
+                      ー 昭和レトロ誕生日記念放送 ー
                     </p>
                     <h1 className="text-3xl md:text-4xl text-[#ece6d8] font-hand font-bold leading-relaxed tracking-wider">
-                      みちちゃん教育番組
+                      みちちゃんバースデー放送室
                     </h1>
                     <div className="w-24 h-0.5 bg-[#a45a49] mx-auto opacity-70 my-4" />
                     <p className="text-xs text-[#a39e93] font-mono tracking-widest uppercase">
-                      Ch.03 Special Memorial Broadcast
+                      Ch.927 Special Birthday Broadcast
                     </p>
                   </div>
 
@@ -563,9 +563,9 @@ export default function App() {
                   <span>Nostalgic Memorial TV System</span>
                 </div>
                 <h1 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-widest flex items-center justify-center md:justify-start gap-2">
-                  みちちゃん教育番組 
+                  みちちゃんバースデー放送室 
                   <span className="text-xs font-mono font-normal bg-[#33403a] text-[#ece6d8] px-2 py-0.5 rounded ml-2 border border-[#6a8d7a]/30">
-                    Ch.3 特別再放送
+                    Ch.927 誕生日特別放送
                   </span>
                 </h1>
                 <p className="text-xs text-[#a39e93] font-klee">
@@ -620,7 +620,7 @@ export default function App() {
                         <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_50px,rgba(255,255,255,0.04)_50px,rgba(255,255,255,0.04)_100px)] pointer-events-none" />
                         <div className="font-mono text-[#ece6d8] text-xs font-bold tracking-widest flex flex-col items-center gap-2">
                           <span className="w-8 h-8 rounded-full border-2 border-t-transparent border-[#ece6d8] animate-spin" />
-                          <span className="text-[#a45a49]">TUNING CH.03...</span>
+                          <span className="text-[#a45a49]">TUNING CH.927...</span>
                         </div>
                       </div>
                     )}
@@ -642,7 +642,7 @@ export default function App() {
                     </div>
 
                     <div className="absolute top-3 right-4 font-mono text-[10px] md:text-xs text-[#00ff66] tracking-widest z-30 select-none opacity-80">
-                      <span>CH.03 VHS-SP</span>
+                      <span>CH.927 VHS-SP</span>
                     </div>
 
                     {/* 実際のニコニコ動画埋め込みプレイヤー */}
@@ -1118,7 +1118,7 @@ export default function App() {
                           </h3>
                         </div>
                         <div className="text-left md:text-right font-hand text-xs text-[#6a8d7a]">
-                          <span>日付: 2026年7月12日（放課後）</span>
+                          <span>日付: {SPECIAL_LESSON.date}</span>
                         </div>
                       </div>
 
@@ -1158,7 +1158,7 @@ export default function App() {
                             </p>
 
                             <div className="border-t border-[#6a8d7a]/30 pt-3 mt-3 flex items-center justify-between text-xs text-[#6a8d7a]">
-                              <span>企画・制作: みちちゃん教育番組お祝い隊</span>
+                              <span>企画・制作: みちちゃんバースデー放送室お祝い隊</span>
                               <span className="font-mono text-[10px] text-[#a45a49]">SPECIAL PRESENT</span>
                             </div>
                           </div>
@@ -1186,7 +1186,7 @@ export default function App() {
           <footer className="mt-20 border-t border-[#2d2621] pt-8 text-center text-xs text-[#8e897e] font-klee space-y-3 px-4 relative z-10">
             <p>📺 本サイトはみちちゃんのお誕生日を記念して作られたファンメイドサプライズサイトです。</p>
             <p className="font-mono text-[10px] tracking-widest text-[#8f4a3a]/60">
-              © 2026 みちちゃんお祝い委員会 / MICHI-CHAN EDUCATION TV PROJECT. ALL RIGHTS RESERVED.
+              © 2026 みちちゃんお祝い委員会 / MICHI-CHAN BIRTHDAY BROADCAST PROJECT. ALL RIGHTS RESERVED.
             </p>
           </footer>
 
