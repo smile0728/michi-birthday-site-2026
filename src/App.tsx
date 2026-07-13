@@ -178,7 +178,7 @@ const LESSON_DATA: Lesson[] = [
     title: "メランコリック 踊ってみた",
     nicovideoId: "sm38500002", // <!-- ここに2本目の動画IDを入れる -->
     date: "2025年08月15日",
-    comment: "ツインテールを揺らしながら踊る姿が最高にキュート！恋する乙女のジレンマを、小さなステップとしぐさで見事に表現しています。間奏の首をかしげるポーズがあざとすぎて、出席者全員がノックアウトされました。",
+    comment: "ツインテールを揺らしながら踊る姿が最高にキュート！恋する乙女のジレンマを、小さなステップとしぐさで見事に表現しています。間奏の首をかしげるポーズがあざとすぎて、ただのオタクはしっかりノックアウトされました。",
     stamp: "great",
     chalkColor: "green"
   },
@@ -340,7 +340,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ハートアラモード 踊ってみた",
     nicovideoId: "sm38500020", // <!-- ここに20本目の動画IDを入れる -->
     date: "2026年06月15日",
-    comment: "1周年の節目を飾る、あたたかくて優しい感謝の気持ちに満ちたダンス。これまで授業を一緒に受けてくれた出席者への、みちさんからの最高の手紙のよう。愛を込めたハートのポーズに、全員が感謝と祝福を込めて拍手を送りました。",
+    comment: "1周年の節目を飾る、あたたかくて優しい感謝の気持ちに満ちたダンス。これまで画面越しに授業を受けてきたオタクへの、みちさんからの最高の手紙のよう。愛を込めたハートのポーズに、感謝と祝福を込めて拍手を送りました。",
     stamp: "excellent",
     chalkColor: "green"
   }
@@ -354,7 +354,7 @@ const SPECIAL_LESSON = {
   title: "ハッピーバースデーみちさん！本日投稿の踊ってみた最新作",
   nicovideoId: "sm41000000", // <!-- ここに特別なサプライズ動画IDを入れる -->
   date: "2026年09月27日 (誕生日当日！)",
-  comment: "みちさん、お誕生日本当におめでとう！この1年間、みちさんが届けてくれたたくさんの『踊ってみた』と最高の笑顔は、私たちの毎日をどれだけ明るく彩ってくれたか計り知れません。不器用だけど、心からの感謝を込めて作った特設サイトです。これからも、自分らしくきらきら踊り続けるみちさんを、私たちはいつまでも一番に応援しています！特別な今日を、特別なお祝いとともに。"
+  comment: "みちさん、お誕生日本当におめでとう！この1年間、みちさんが届けてくれたたくさんの『踊ってみた』と最高の笑顔に、何度も元気をもらってきました。不器用だけど、心からの感謝を込めて作った特設サイトです。これからも、自分らしくきらきら踊り続けるみちさんを、ずっと応援しています。特別な今日に、ただのオタクより愛を込めて。"
 };
 
 export default function App() {
@@ -577,7 +577,7 @@ export default function App() {
               <div className="bg-[#2b3a33] border-4 border-[#5c4033] p-3 rounded-lg shadow-md max-w-md w-full grid grid-cols-3 text-[11px] md:text-sm font-hand">
                 <div className="space-y-1 border-r border-[#6a8d7a]/30 px-2 first:pl-0">
                   <div className="text-[#6a8d7a] text-center ui-nowrap">【本日の日直】</div>
-                  <div className="text-center font-bold text-[#ece6d8] jp-keep">みちさん & 祝い隊</div>
+                  <div className="text-center font-bold text-[#ece6d8] jp-keep">ただのオタク</div>
                 </div>
                 <div className="space-y-1 border-r border-[#6a8d7a]/30 px-2">
                   <div className="text-[#6a8d7a] text-center ui-nowrap">【本日の目標】</div>
@@ -802,7 +802,7 @@ export default function App() {
                     {/* 教師からの評価スタンプ（レトロな赤インク風スタンプ） */}
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 pt-2">
                       <div className="text-[11px] font-klee text-[#8a8174] jp-keep">
-                        ※この授業は記念再放送として全員が出席しました。
+                        ※この授業は記念再放送として出席登録済みです。
                       </div>
                       
                       {/* 赤インクスタンプ */}
@@ -971,7 +971,7 @@ export default function App() {
                   </div>
 
                   <div className="border-t border-[#6a8d7a]/30 pt-4 mt-6 text-center text-xs text-[#6a8d7a] font-hand relative z-10">
-                    <p>担任教諭：祝い隊一同 より</p>
+                    <p>担任教諭：ただのオタク より</p>
                     <p className="text-[10px] mt-1 text-[#a45a49]">「1年間、感動をありがとうございました！」</p>
                   </div>
                 </div>
@@ -1005,16 +1005,16 @@ export default function App() {
                       <p className="indent-4 text-justify">
                         この1年間、みちさんが投稿してくれた約20本の踊ってみた作品は、どれも個性的で、熱い想いがぎゅっと詰まった素晴らしい「授業」ばかりでした。
                         最初は初々しくて緊張していた姿が、時を重ねるごとに表現の幅を広げ、ついには艶やかな和風ダンスやダークな曲調まで完璧に踊りこなす姿を見て、
-                        私たち祝い隊一同はいつも大きな驚きと、それ以上の元気をたくさんもらっていました。
+                        ただのオタクはいつも大きな驚きと、それ以上の元気をたくさんもらっていました。
                       </p>
                       
                       <p className="indent-4 text-justify">
-                        完璧に整った可愛さだけではなく、どこか手作りで、不器用なほどに一生懸命で、温かいみちさんの踊りとコメントが、私たちの毎日の最高の癒やしです。
+                        完璧に整った可愛さだけではなく、どこか手作りで、不器用なほどに一生懸命で、温かいみちさんの踊りとコメントが、日々の最高の癒やしです。
                         日々の中にみちさんの動画という「きらきらした時間」があったこと、本当に感謝しています。
                       </p>
 
                       <p className="text-right text-xs md:text-sm text-[#a39e93] pt-2">
-                        出席者・祝い隊一同より、愛とリスペクトを込めて。
+                        ただのオタクより、愛とリスペクトを込めて。
                       </p>
                     </div>
                   </div>
@@ -1158,7 +1158,7 @@ export default function App() {
                             </p>
 
                             <div className="border-t border-[#6a8d7a]/30 pt-3 mt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs text-[#6a8d7a]">
-                              <span className="jp-keep">企画・制作: みちさんバースデー放送室お祝い隊</span>
+                              <span className="jp-keep">企画・制作: ただのオタクより</span>
                               <span className="font-mono text-[10px] text-[#a45a49]">SPECIAL PRESENT</span>
                             </div>
                           </div>
@@ -1186,7 +1186,7 @@ export default function App() {
           <footer className="mt-20 border-t border-[#2d2621] pt-8 text-center text-xs text-[#8e897e] font-klee space-y-3 px-4 relative z-10">
             <p className="jp-balance">📺 本サイトはみちさんのお誕生日を記念して作られたファンメイドサプライズサイトです。</p>
             <p className="font-mono text-[10px] tracking-wider text-[#8f4a3a]/60 break-words">
-              © 2026 みちさんお祝い委員会 / MICHI-SAN BIRTHDAY BROADCAST PROJECT. ALL RIGHTS RESERVED.
+              © 2026 ただのオタクより / MICHI-SAN BIRTHDAY BROADCAST PROJECT.
             </p>
           </footer>
 
