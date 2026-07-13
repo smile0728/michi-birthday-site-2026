@@ -169,7 +169,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ハッピーシンセサイザ 踊ってみた",
     nicovideoId: "sm38500001", // <!-- ここに1本目の動画IDを入れる -->
     date: "2025年08月01日",
-    comment: "記念すべきバースデー放送室の第1時限目！ドキドキの初投稿です。みちちゃんの緊張が指先から伝わってくるけれど、弾ける笑顔は最初から満点！何回も見返したくなる、ここから全てが始まった奇跡の原点です。",
+    comment: "記念すべきバースデー放送室の第1時限目！ドキドキの初投稿です。みちさんの緊張が指先から伝わってくるけれど、弾ける笑顔は最初から満点！何回も見返したくなる、ここから全てが始まった奇跡の原点です。",
     stamp: "excellent",
     chalkColor: "white"
   },
@@ -187,7 +187,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ルカルカ★ナイトフィーバー 踊ってみた",
     nicovideoId: "sm38500003", // <!-- ここに3本目の動画IDを入れる -->
     date: "2025年09月01日",
-    comment: "一転してユーロビートのキレキレダンスに挑戦！体全体をダイナミックに使った激しい振り付けなのに、息を切らさずにずっと満面の笑みをキープ。みちちゃんの高いポテンシャルと体力の凄さに驚かされた熱い授業です。",
+    comment: "一転してユーロビートのキレキレダンスに挑戦！体全体をダイナミックに使った激しい振り付けなのに、息を切らさずにずっと満面の笑みをキープ。みちさんの高いポテンシャルと体力の凄さに驚かされた熱い授業です。",
     stamp: "excellent",
     chalkColor: "red"
   },
@@ -223,7 +223,7 @@ const LESSON_DATA: Lesson[] = [
     title: "神のまにまに 踊ってみた",
     nicovideoId: "sm38500007", // <!-- ここに7本目の動画IDを入れる -->
     date: "2025年11月03日",
-    comment: "和モダンな世界観の中で、お祭り騒ぎのように踊るハッピーなコマ。みんなで手拍子を合わせたくなるような一体感があります。「神様も人も、みんな一緒に楽しもう！」というみちちゃんの優しいオーラが溢れる授業です。",
+    comment: "和モダンな世界観の中で、お祭り騒ぎのように踊るハッピーなコマ。みんなで手拍子を合わせたくなるような一体感があります。「神様も人も、みんな一緒に楽しもう！」というみちさんの優しいオーラが溢れる授業です。",
     stamp: "excellent",
     chalkColor: "white"
   },
@@ -232,7 +232,7 @@ const LESSON_DATA: Lesson[] = [
     title: "惑星ループ 踊ってみた",
     nicovideoId: "sm38500008", // <!-- ここに8本目の動画IDを入れる -->
     date: "2025年11月22日",
-    comment: "「トゥットゥルー」の無限ループに吸い込まれる！宇宙を回る軌道のように、みちちゃんの周囲にはいつも笑顔の引力が働いています。ジャンプやスピンの軸がぶれず、ダンスの重心がどんどん安定してきたのがわかります。",
+    comment: "「トゥットゥルー」の無限ループに吸い込まれる！宇宙を回る軌道のように、みちさんの周囲にはいつも笑顔の引力が働いています。ジャンプやスピンの軸がぶれず、ダンスの重心がどんどん安定してきたのがわかります。",
     stamp: "great",
     chalkColor: "green"
   },
@@ -241,7 +241,7 @@ const LESSON_DATA: Lesson[] = [
     title: "可愛くてごめん 踊ってみた",
     nicovideoId: "sm38500009", // <!-- ここに9本目の動画IDを入れる -->
     date: "2025年12月10日",
-    comment: "あざと可愛さの限界を突破！ちゅっちゅっと投げキッスをする仕草や、自分を全肯定する歌詞に合わせたポージングが完璧。みちちゃんに「可愛くてごめん」と歌われたら、全人類「いいえ、ありがとう！」と平伏すのみです。",
+    comment: "あざと可愛さの限界を突破！ちゅっちゅっと投げキッスをする仕草や、自分を全肯定する歌詞に合わせたポージングが完璧。みちさんに「可愛くてごめん」と歌われたら、全人類「いいえ、ありがとう！」と平伏すのみです。",
     stamp: "excellent",
     chalkColor: "red"
   },
@@ -268,7 +268,7 @@ const LESSON_DATA: Lesson[] = [
     title: "シル・ヴ・プレジデント 踊ってみた",
     nicovideoId: "sm38500012", // <!-- ここに12本目の動画IDを入れる -->
     date: "2026年01月25日",
-    comment: "「宣誓！私が大統領になったら！」のポーズが凛々しくて超キュート。ちょっとツンとした表情と、コミカルなダンスのギャップがたまりません。みちちゃんが大統領選挙に出たら、ぶっちぎりで一発当選間違いなし！",
+    comment: "「宣誓！私が大統領になったら！」のポーズが凛々しくて超キュート。ちょっとツンとした表情と、コミカルなダンスのギャップがたまりません。みちさんが大統領選挙に出たら、ぶっちぎりで一発当選間違いなし！",
     stamp: "great",
     chalkColor: "red"
   },
@@ -286,7 +286,7 @@ const LESSON_DATA: Lesson[] = [
     title: "エイリアンエイリアン 踊ってみた",
     nicovideoId: "sm38500014", // <!-- ここに14本目の動画IDを入れる -->
     date: "2026年02月28日",
-    comment: "どこか無機質で宇宙的な、不思議なコンテンポラリー風ステップに挑戦。ロボットのようなカチッとした動きと、しなやかなターンの対比が素晴らしい！みちちゃんエイリアンに心を通わされ、未確認のトキメキを観測しました。",
+    comment: "どこか無機質で宇宙的な、不思議なコンテンポラリー風ステップに挑戦。ロボットのようなカチッとした動きと、しなやかなターンの対比が素晴らしい！みちさんエイリアンに心を通わされ、未確認のトキメキを観測しました。",
     stamp: "good",
     chalkColor: "green"
   },
@@ -295,7 +295,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ニア 踊ってみた",
     nicovideoId: "sm38500015", // <!-- ここに15本目の動画IDを入れる -->
     date: "2026年03月15日",
-    comment: "AIと人間の絆を描いた切なくも優しい名曲。一歩一歩踏みしめるような静かな動きから、サビに向けて感情が爆発するような大きな振りが胸を打ちます。みちちゃんのダンスから、確かなストーリーを感じられた深みのある授業です。",
+    comment: "AIと人間の絆を描いた切なくも優しい名曲。一歩一歩踏みしめるような静かな動きから、サビに向けて感情が爆発するような大きな振りが胸を打ちます。みちさんのダンスから、確かなストーリーを感じられた深みのある授業です。",
     stamp: "excellent",
     chalkColor: "red"
   },
@@ -304,7 +304,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ファンサ 踊ってみた",
     nicovideoId: "sm38500016", // <!-- ここに16本目の動画IDを入れる -->
     date: "2026年04月01日",
-    comment: "アイドル精神ここに極まれり！「もっともっと！」の声に応える特大のサービス満点ダンス。ファン一人ひとりに視線を送るような丁寧なカメラアピールに、全米が、いや、全みちちゃんファンが嬉し涙を流した伝説回。",
+    comment: "アイドル精神ここに極まれり！「もっともっと！」の声に応える特大のサービス満点ダンス。ファン一人ひとりに視線を送るような丁寧なカメラアピールに、全米が、いや、全みちさんファンが嬉し涙を流した伝説回。",
     stamp: "excellent",
     chalkColor: "white"
   },
@@ -331,7 +331,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ダーリンダンス 踊ってみた",
     nicovideoId: "sm38500019", // <!-- ここに19本目の動画IDを入れる -->
     date: "2026年05月25日",
-    comment: "ちょっとダークなゆめかわいい世界。ゴシック風の仕草や、ニヒルで挑発的な表情が今までになく新鮮！みちちゃんの持つ多面的なミリョクをまざまざと見せつけられた、中毒性120%の病みつきコマです。",
+    comment: "ちょっとダークなゆめかわいい世界。ゴシック風の仕草や、ニヒルで挑発的な表情が今までになく新鮮！みちさんの持つ多面的なミリョクをまざまざと見せつけられた、中毒性120%の病みつきコマです。",
     stamp: "great",
     chalkColor: "white"
   },
@@ -340,7 +340,7 @@ const LESSON_DATA: Lesson[] = [
     title: "ハートアラモード 踊ってみた",
     nicovideoId: "sm38500020", // <!-- ここに20本目の動画IDを入れる -->
     date: "2026年06月15日",
-    comment: "1周年の節目を飾る、あたたかくて優しい感謝の気持ちに満ちたダンス。これまで授業を一緒に受けてくれた出席者への、みちちゃんからの最高の手紙のよう。愛を込めたハートのポーズに、全員が感謝と祝福を込めて拍手を送りました。",
+    comment: "1周年の節目を飾る、あたたかくて優しい感謝の気持ちに満ちたダンス。これまで授業を一緒に受けてくれた出席者への、みちさんからの最高の手紙のよう。愛を込めたハートのポーズに、全員が感謝と祝福を込めて拍手を送りました。",
     stamp: "excellent",
     chalkColor: "green"
   }
@@ -351,10 +351,10 @@ const LESSON_DATA: Lesson[] = [
 // ここに今日投稿した、最新のサプライズ動画IDを設定！
 // ==========================================
 const SPECIAL_LESSON = {
-  title: "ハッピーバースデーみちちゃん！本日投稿の踊ってみた最新作",
+  title: "ハッピーバースデーみちさん！本日投稿の踊ってみた最新作",
   nicovideoId: "sm41000000", // <!-- ここに特別なサプライズ動画IDを入れる -->
   date: "2026年09月27日 (誕生日当日！)",
-  comment: "みちちゃん、お誕生日本当におめでとう！この1年間、みちちゃんが届けてくれたたくさんの『踊ってみた』と最高の笑顔は、私たちの毎日をどれだけ明るく彩ってくれたか計り知れません。不器用だけど、心からの感謝を込めて作った特設サイトです。これからも、自分らしくきらきら踊り続けるみちちゃんを、私たちはいつまでも一番に応援しています！特別な今日を、特別なお祝いとともに。"
+  comment: "みちさん、お誕生日本当におめでとう！この1年間、みちさんが届けてくれたたくさんの『踊ってみた』と最高の笑顔は、私たちの毎日をどれだけ明るく彩ってくれたか計り知れません。不器用だけど、心からの感謝を込めて作った特設サイトです。これからも、自分らしくきらきら踊り続けるみちさんを、私たちはいつまでも一番に応援しています！特別な今日を、特別なお祝いとともに。"
 };
 
 export default function App() {
@@ -412,7 +412,7 @@ export default function App() {
     setTimeout(() => {
       setIsTvGlitching(false);
       sfx.playSchoolChime(); // 起動時に優しくチャイムを鳴らす
-      triggerNotification("チャイムが鳴りました！みちちゃんバースデー放送室の開始です");
+      triggerNotification("チャイムが鳴りました！みちさんバースデー放送室の開始です");
     }, 1200);
   };
 
@@ -495,7 +495,7 @@ export default function App() {
                       ー 昭和レトロ誕生日記念放送 ー
                     </p>
                     <h1 className="text-3xl md:text-4xl text-[#ece6d8] font-hand font-bold leading-relaxed tracking-wider">
-                      みちちゃんバースデー放送室
+                      みちさんバースデー放送室
                     </h1>
                     <div className="w-24 h-0.5 bg-[#a45a49] mx-auto opacity-70 my-4" />
                     <p className="text-xs text-[#a39e93] font-mono tracking-widest uppercase">
@@ -563,7 +563,7 @@ export default function App() {
                   <span>Nostalgic Memorial TV System</span>
                 </div>
                 <h1 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-widest flex items-center justify-center md:justify-start gap-2">
-                  みちちゃんバースデー放送室 
+                  みちさんバースデー放送室 
                   <span className="text-xs font-mono font-normal bg-[#33403a] text-[#ece6d8] px-2 py-0.5 rounded ml-2 border border-[#6a8d7a]/30">
                     Ch.927 誕生日特別放送
                   </span>
@@ -577,7 +577,7 @@ export default function App() {
               <div className="bg-[#2b3a33] border-4 border-[#5c4033] p-3 rounded-lg shadow-md max-w-sm w-full flex justify-between text-xs md:text-sm font-hand">
                 <div className="space-y-1 border-r border-[#6a8d7a]/30 pr-4">
                   <div className="text-[#6a8d7a]">【本日の日直】</div>
-                  <div className="text-center font-bold text-[#ece6d8]">みちちゃん & 祝い隊</div>
+                  <div className="text-center font-bold text-[#ece6d8]">みちさん & 祝い隊</div>
                 </div>
                 <div className="space-y-1 border-r border-[#6a8d7a]/30 px-4">
                   <div className="text-[#6a8d7a]">【本日の目標】</div>
@@ -808,7 +808,7 @@ export default function App() {
                       {/* 赤インクスタンプ */}
                       <div className="relative w-20 h-20 flex items-center justify-center transform rotate-6 border-4 border-dashed border-[#a45a49] rounded-full p-1 shadow-sm select-none">
                         <div className="border-2 border-double border-[#a45a49] rounded-full w-full h-full flex flex-col items-center justify-center bg-white/40">
-                          <span className="text-[10px] font-bold text-[#a45a49] font-hand leading-none">みちちゃん</span>
+                          <span className="text-[10px] font-bold text-[#a45a49] font-hand leading-none">みちさん</span>
                           <span className="text-xs font-bold text-[#a45a49] font-hand leading-normal uppercase my-0.5">
                             {activeLesson.stamp === 'excellent' ? 'たいへんよく' : activeLesson.stamp === 'great' ? 'よく' : 'がんばり'}
                           </span>
@@ -928,7 +928,7 @@ export default function App() {
                   
                   <div className="space-y-4 relative z-10">
                     <div className="border-b-2 border-[#6a8d7a]/40 pb-2 text-center">
-                      <h3 className="font-hand text-xl text-[#ece6d8] chalk-text">みちちゃん通知表</h3>
+                      <h3 className="font-hand text-xl text-[#ece6d8] chalk-text">みちさん通知表</h3>
                       <p className="text-[10px] font-mono text-[#6a8d7a] uppercase tracking-widest mt-0.5">Dance Performance Appraisal</p>
                     </div>
 
@@ -987,7 +987,7 @@ export default function App() {
                     </div>
                     
                     <h3 className="text-xl md:text-2xl font-hand text-[#ece6d8] tracking-wider flex items-center gap-2">
-                      総合所見（みちちゃんへの手紙）
+                      総合所見（みちさんへの手紙）
                     </h3>
 
                     {/* 昭和の作文用紙・便箋風の枠 */}
@@ -1000,17 +1000,17 @@ export default function App() {
                            }} 
                       />
 
-                      <p className="text-[#a45a49] font-bold">みちちゃんへ、お誕生日おめでとうございます！</p>
+                      <p className="text-[#a45a49] font-bold">みちさんへ、お誕生日おめでとうございます！</p>
                       
                       <p className="indent-4 text-justify">
-                        この1年間、みちちゃんが投稿してくれた約20本の踊ってみた作品は、どれも個性的で、熱い想いがぎゅっと詰まった素晴らしい「授業」ばかりでした。
+                        この1年間、みちさんが投稿してくれた約20本の踊ってみた作品は、どれも個性的で、熱い想いがぎゅっと詰まった素晴らしい「授業」ばかりでした。
                         最初は初々しくて緊張していた姿が、時を重ねるごとに表現の幅を広げ、ついには艶やかな和風ダンスやダークな曲調まで完璧に踊りこなす姿を見て、
                         私たち祝い隊一同はいつも大きな驚きと、それ以上の元気をたくさんもらっていました。
                       </p>
                       
                       <p className="indent-4 text-justify">
-                        完璧に整った可愛さだけではなく、どこか手作りで、不器用なほどに一生懸命で、温かいみちちゃんの踊りとコメントが、私たちの毎日の最高の癒やしです。
-                        日々の中にみちちゃんの動画という「きらきらした時間」があったこと、本当に感謝しています。
+                        完璧に整った可愛さだけではなく、どこか手作りで、不器用なほどに一生懸命で、温かいみちさんの踊りとコメントが、私たちの毎日の最高の癒やしです。
+                        日々の中にみちさんの動画という「きらきらした時間」があったこと、本当に感謝しています。
                       </p>
 
                       <p className="text-right text-xs md:text-sm text-[#a39e93] pt-2">
@@ -1114,7 +1114,7 @@ export default function App() {
                             <span>本日限りの特別授業</span>
                           </div>
                           <h3 className="text-2xl md:text-3xl font-hand font-bold text-[#ece6d8] chalk-text mt-1.5">
-                            特別授業：『ハッピーバースデーみちちゃん！』
+                            特別授業：『ハッピーバースデーみちさん！』
                           </h3>
                         </div>
                         <div className="text-left md:text-right font-hand text-xs text-[#6a8d7a]">
@@ -1158,14 +1158,14 @@ export default function App() {
                             </p>
 
                             <div className="border-t border-[#6a8d7a]/30 pt-3 mt-3 flex items-center justify-between text-xs text-[#6a8d7a]">
-                              <span>企画・制作: みちちゃんバースデー放送室お祝い隊</span>
+                              <span>企画・制作: みちさんバースデー放送室お祝い隊</span>
                               <span className="font-mono text-[10px] text-[#a45a49]">SPECIAL PRESENT</span>
                             </div>
                           </div>
 
                           {/* リピートを促す可愛いチョーク風手書きメモ */}
                           <div className="border border-dashed border-[#6a8d7a] p-4 rounded-xl text-center font-hand text-xs text-[#6a8d7a] space-y-1">
-                            <p className="chalk-text-green">💡 「みちちゃん、生まれてきてくれてありがとう！」</p>
+                            <p className="chalk-text-green">💡 「みちさん、生まれてきてくれてありがとう！」</p>
                             <p>この動画の感想は、ぜひコメント欄でたくさん届けてくださいね！</p>
                           </div>
 
@@ -1184,9 +1184,9 @@ export default function App() {
 
           {/* フッター */}
           <footer className="mt-20 border-t border-[#2d2621] pt-8 text-center text-xs text-[#8e897e] font-klee space-y-3 px-4 relative z-10">
-            <p>📺 本サイトはみちちゃんのお誕生日を記念して作られたファンメイドサプライズサイトです。</p>
+            <p>📺 本サイトはみちさんのお誕生日を記念して作られたファンメイドサプライズサイトです。</p>
             <p className="font-mono text-[10px] tracking-widest text-[#8f4a3a]/60">
-              © 2026 みちちゃんお祝い委員会 / MICHI-CHAN BIRTHDAY BROADCAST PROJECT. ALL RIGHTS RESERVED.
+              © 2026 みちさんお祝い委員会 / MICHI-SAN BIRTHDAY BROADCAST PROJECT. ALL RIGHTS RESERVED.
             </p>
           </footer>
 
