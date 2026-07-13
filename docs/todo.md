@@ -69,4 +69,6 @@
 - [ ] 画像やサムネイルを追加し、授業カードの識別性を上げる。
 - [ ] URLクエリで初期表示する授業番号を指定できるようにする。
 - [ ] 特別授業の開放状態を `localStorage` に保存する。
-- [ ] GitHub PagesまたはCloudflare Pagesへの公開手順を追加する。
+- [x] Cloudflare Pagesへの公開手順を追加する。
+- [ ] Cloudflare PagesでGitHub連携デプロイを設定する。
+- [ ] 公開URLで本番表示を確認する。
