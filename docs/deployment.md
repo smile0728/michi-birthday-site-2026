@@ -28,6 +28,12 @@ Environment variables: なし
 https://michi-birthday-site-2026.pages.dev
 ```
 
+現在の公開URL:
+
+```text
+https://michi-birthday-site-2026.1108smileman.workers.dev/
+```
+
 ### 手順
 
 1. Cloudflare Dashboardにログインする。
@@ -73,6 +79,7 @@ npx wrangler pages deploy ./dist --project-name=michi-birthday-site-2026
 - Viteの `base` 設定は不要。Cloudflare Pagesはドメイン直下で配信するため、`/assets/...` のままで動作する。
 - GitHub Pagesとは異なり、リポジトリ名を含むサブパス配信ではない。
 - Cloudflare PagesのGitHub連携後は、`main` にpushするたびに自動で本番デプロイされる。
+- Cloudflare側で `workers.dev` ドメインを有効にしている場合、公開URLは `*.workers.dev` になることがある。
 
 ## トラブルシュート
 
