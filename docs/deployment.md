@@ -31,7 +31,7 @@ https://michi-birthday-site-2026.pages.dev
 現在の公開URL:
 
 ```text
-https://michi-birthday-site-2026.1108smileman.workers.dev/
+https://michi-birthday-site-2026.smile0513.workers.dev/
 ```
 
 ### 手順

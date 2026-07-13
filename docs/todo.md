@@ -71,4 +71,4 @@
 - [ ] 特別授業の開放状態を `localStorage` に保存する。
 - [x] Cloudflare Pagesへの公開手順を追加する。
 - [x] Cloudflare Pagesで公開URLを有効化する。
-- [x] 公開URLで本番表示を確認する: `https://michi-birthday-site-2026.1108smileman.workers.dev/`
+- [x] 公開URLで本番表示を確認する: `https://michi-birthday-site-2026.smile0513.workers.dev/`
