@@ -494,8 +494,10 @@ export default function App() {
                     <p className="text-sm tracking-wider md:tracking-widest text-[#a45a49] font-hand font-bold jp-balance">
                       ー 昭和レトロ誕生日記念放送 ー
                     </p>
-                    <h1 className="text-3xl md:text-4xl text-[#ece6d8] font-hand font-bold leading-relaxed tracking-normal md:tracking-wider jp-balance">
-                      みちさんバースデー放送室
+                    <h1 className="scribble-logo text-3xl md:text-4xl jp-balance" data-text="みちさんバースデー放送室" aria-label="みちさんバースデー放送室">
+                      <span className="scribble-word">みちさん</span>
+                      <span className="scribble-word">バースデー</span>
+                      <span className="scribble-word">放送室</span>
                     </h1>
                     <div className="w-24 h-0.5 bg-[#a45a49] mx-auto opacity-70 my-4" />
                     <p className="text-xs text-[#a39e93] font-mono tracking-widest uppercase">
@@ -562,8 +564,12 @@ export default function App() {
                   <Tv size={12} className="animate-pulse" />
                   <span>Nostalgic Memorial TV System</span>
                 </div>
-                <h1 className="text-2xl md:text-3xl font-hand text-[#ece6d8] tracking-normal md:tracking-wider flex flex-wrap items-center justify-center md:justify-start gap-2 jp-balance">
-                  <span>みちさんバースデー放送室</span>
+                <h1 className="text-2xl md:text-3xl flex flex-wrap items-center justify-center md:justify-start gap-2 jp-balance">
+                  <span className="scribble-logo text-2xl md:text-3xl" data-text="みちさんバースデー放送室" aria-label="みちさんバースデー放送室">
+                    <span className="scribble-word">みちさん</span>
+                    <span className="scribble-word">バースデー</span>
+                    <span className="scribble-word">放送室</span>
+                  </span>
                   <span className="text-xs font-mono font-normal bg-[#33403a] text-[#ece6d8] px-2 py-0.5 rounded border border-[#6a8d7a]/30 ui-nowrap">
                     Ch.927 誕生日特別放送
                   </span>
